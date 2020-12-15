@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "lib": ["es2018", "dom"],
+    "jsx": "react",
+    "jsxFactory": "createElement",
+    "module": "commonjs",
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "target": "ES2020"
+  },
+  "include": [
+    "**/*.js"
+  ],
+  "exclude": [
+    // Tests are not checked.
+    "**/test/**/*.js",
+    "test-util/**/*.js",
+    "karma.config.js",
+  ]
+}

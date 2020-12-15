@@ -1,0 +1,70 @@
+@use '../variables' as var;
+@use '../mixins/utils';
+
+// Base styles
+// -----------
+@use '../reset';
+@use '../util';
+@use './elements';
+
+// Shared components
+// -----------------
+@use '../components/svg-icon';
+
+// Components
+// ----------
+@use './components/annotation';
+@use './components/annotation-body';
+@use './components/annotation-header';
+@use './components/annotation-license';
+@use './components/annotation-publish-control';
+@use './components/annotation-quote';
+@use './components/annotation-share-control';
+@use './components/annotation-share-info';
+@use './components/annotation-timestamps';
+@use './components/annotation-user';
+@use './components/autocomplete-list';
+@use './components/button';
+@use './components/excerpt';
+@use './components/filter-status';
+@use './components/group-list';
+@use './components/group-list-item';
+@use './components/help-panel';
+@use './components/hypothesis-app';
+@use './components/logged-out-message';
+@use './components/markdown-editor';
+@use './components/markdown-view';
+@use './components/menu';
+@use './components/menu-item';
+@use './components/menu-section';
+@use './components/moderation-banner';
+@use './components/notebook-view';
+@use './components/selection-tabs';
+@use './components/share-annotations-panel';
+@use './components/search-input';
+@use './components/share-links';
+@use './components/sidebar-content-error';
+@use './components/sidebar-panel';
+@use './components/spinner';
+@use './components/tag-editor';
+@use './components/tag-list';
+@use './components/thread';
+@use './components/thread-card';
+@use './components/thread-list';
+@use './components/toast-messages';
+@use './components/top-bar';
+@use './components/tutorial';
+@use './components/version-info';
+
+// Top-level styles
+// ----------------
+
+body {
+  @include utils.font--medium;
+  height: 100%;
+
+  background-color: var.$color-background;
+  color: var.$color-text;
+  font-family: var.$sans-font-family;
+  font-weight: normal;
+}

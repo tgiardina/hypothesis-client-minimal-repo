@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true,
+  },
+  "rules": {
+    "no-console": "off",
+    "react-hooks/rules-of-hooks": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
+}
