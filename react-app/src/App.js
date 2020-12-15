@@ -1,8 +1,16 @@
-import "hypothesis";
+// import "hypothesis";
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'http://localhost:3001/hypothesis';
+    script.async = true;
+    document.body.appendChild(script);
+  })
+  
   return (
     <div className="App">
       <header className="App-header">

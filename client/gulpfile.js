@@ -226,11 +226,11 @@ function generateBootScript(manifest, { usingDevServer = false } = {}) {
 
   const defaultNotebookAppUrl = process.env.NOTEBOOK_APP_URL
     ? `${process.env.NOTEBOOK_APP_URL}`
-    : '{current_scheme}://{current_host}:5000/notebook';
+    : 'https://hypothes.is/notebook';
 
   const defaultSidebarAppUrl = process.env.SIDEBAR_APP_URL
     ? `${process.env.SIDEBAR_APP_URL}`
-    : '{current_scheme}://{current_host}:5000/app.html';
+    : 'https://hypothes.is/app.html';
 
   let defaultAssetRoot;
 
